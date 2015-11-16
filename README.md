@@ -9,4 +9,13 @@ The page /users/list.xhtml is listed in the file for 'scope-extend-paths'. Arach
 
 The page /users/edit.xhtml is not listed in the file for 'scope-extend-paths', but I expect Arachni to see the link on /users/list and to follow it (I can't list the 'edit' page directly in scope-extend-paths because, in my real webapp, I need to transfer some informations from 'list' to 'edit'). But it seems Arachni doesn't. 
 
+I commited the report so you can see users/edit.xhtml is not listed in the sitemap.
+
+## How to run
+
+### With already created war file
+I commited the war of the webapp (target/link-not-followed-by-arachni-1.0.0-SNAPSHOT.war), so you just have to use it in an already installed tomcat (if you have one).
+
+### From the code
+In the root directory, run : mvn clean tomcat7:run  (you need maven). The webapp will be accessible at : http://localhost:8080/users/list.xhtml
 
