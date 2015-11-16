@@ -7,6 +7,6 @@ The webapp has 2 pages :
 
 The page /users/list.xhtml is listed in the file for 'scope-extend-paths'. Arachni see it.
 
-The page /users/edit.xhtml is not listed in the file for 'scope-extend-paths', but I expect Arachni to see the link on /users/list and to follow it. But it seems Arachni doesn't. 
+The page /users/edit.xhtml is not listed in the file for 'scope-extend-paths', but I expect Arachni to see the link on /users/list and to follow it (I can't list the 'edit' page directly in scope-extend-paths because, in my real webapp, I need to transfer some informations from 'list' to 'edit'). But it seems Arachni doesn't. 
 
 
