@@ -19,7 +19,16 @@ This command line works correctly on the "master" branch (= only 1 list and 1 ed
 But on this branch, the "edit" pages are not seen : 
 edit1 and edit2 are not in the report, list1 has a 500 status code and list2 has 200. 
 
-I commited the file logs.txt and the .afr and .html.zip reports, so you can have the exact informations.
+The webapp logs : 
+```
+GRAVE: Servlet.service() for servlet [faces] in context with path [] threw exception [viewId:/users/list1.xhtml - La vue «/users/list1.xhtml» n’a pas pu être restaurée.] with root cause
+javax.faces.application.ViewExpiredException: viewId:/users/list1.xhtml - La vue «/users/list1.xhtml» n’a pas pu être restaurée.
+```
+La vue «/users/list1.xhtml» n’a pas pu être restaurée = View «/users/list1.xhtml» couldn't be restored.
+
+Which explains the "500" status code. But why could the view not be restored ? Is the ViewState still invalidated by Arachni, despite the audit-exclude-vector ? How ?
+
+I commited the file logs.txt containings the arachni logs, and the .afr and .html.zip reports, so you can have the exact informations.
 
 
 ## How to run
