@@ -1,0 +1,1675 @@
+Arachni - Web Application Security Scanner Framework v2.0dev
+   Author: Tasos "Zapotek" Laskos <tasos.laskos@arachni-scanner.com>
+
+           (With the support of the community and the Arachni Team.)
+
+   Website:       http://arachni-scanner.com
+   Documentation: http://arachni-scanner.com/wiki
+
+
+[*] Initializing...
+[*] Preparing plugins...
+[*] ... done.
+[*] BrowserCluster: Initializing 6 browsers...
+[*] BrowserCluster: Spawned #1 with PID 11753.
+[*] BrowserCluster: Spawned #2 with PID 11772.
+[*] BrowserCluster: Spawned #3 with PID 11791.
+[*] BrowserCluster: Spawned #4 with PID 11810.
+[*] BrowserCluster: Spawned #5 with PID 11830.
+[*] BrowserCluster: Spawned #6 with PID 11849.
+[*] BrowserCluster: Initialization completed with 6 browsers in the pool.
+
+[*] [HTTP: 200] http://david-virtualbox:8080/
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[*] XSS in path: Checking for: http://david-virtualbox:8080/<my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/>"'><my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/
+[*] Allowed methods: Checking...
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/index.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 1 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] XSS in HTML tag: Submitting form with original values for j_idt8, javax.faces.ViewState at 'http://david-virtualbox:8080/users/list1.xhtml'.
+[~] XSS in HTML tag: Refreshing nonce for 'javax.faces.ViewState'.
+[~] XSS in HTML tag: Got new nonce '-536768599436942369:-4915650553067038370'.
+[*] XSS in HTML tag: Analyzing response #21 for form input '__original_values__' pointing to: 'http://david-virtualbox:8080/users/list1.xhtml'
+[~] Trainer: Found 1 new forms.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/<my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/>"'><my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/users/
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] CSRF: Looking for CSRF candidates...
+[*] CSRF: Simulating logged-out user.
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[~] Session fixation: No login-check has been set, cannot continue.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] CSRF: Found 1 context irrelevant forms.
+[*] CSRF: Found 1 CSRF candidates.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1' or 1='1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1" or 1="1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1 or 1=1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1' or 1='2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1" or 1="2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1 or 1=2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list2.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] XSS in HTML tag: Submitting form with original values for j_idt8, javax.faces.ViewState at 'http://david-virtualbox:8080/users/list2.xhtml'.
+[~] XSS in HTML tag: Refreshing nonce for 'javax.faces.ViewState'.
+[~] XSS in HTML tag: Got new nonce '-4378686445361784130:-7393467555070071910'.
+[*] XSS in HTML tag: Analyzing response #33 for form input '__original_values__' pointing to: 'http://david-virtualbox:8080/users/list2.xhtml'
+[~] Trainer: Found 1 new forms.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] DOM depth: 0 (Limit: 10)
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~]   Transitions:
+[~]         * [0.0000s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] CSRF: Looking for CSRF candidates...
+[*] CSRF: Simulating logged-out user.
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[~] Session fixation: No login-check has been set, cannot continue.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] CSRF: Found 1 context irrelevant forms.
+[*] CSRF: Found 1 CSRF candidates.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1' or 1='1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1" or 1="1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1 or 1=1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1' or 1='2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1" or 1="2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list2.xhtml' using seed: -1 or 1=2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list2.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~]   Transitions:
+[~]         * [0.0000s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[*] XSS in HTML tag: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Submitting form with original values for ln, stage at 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] XSS in HTML tag: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/<my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/>"'><my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/javax.faces.resource/
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] CSRF: Looking for CSRF candidates...
+[*] CSRF: Simulating logged-out user.
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[~] Session fixation: No login-check has been set, cannot continue.
+[*] XPath Injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] XSS in HTML tag: Analyzing response #40 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #45 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #43 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #44 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #42 for form input '__original_values__' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[~] Trainer: Found 1 new cookies.
+[*] XSS in HTML element event attribute: Analyzing response #47 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #49 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #51 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #53 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #55 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #57 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #41 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #69 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #75 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #46 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #48 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #50 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #52 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #54 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #56 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #58 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #71 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #65 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #67 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #73 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #77 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #81 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #79 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #83 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #85 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #66 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #68 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #74 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #76 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #89 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #91 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #87 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #101 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #97 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #93 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #95 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #103 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #72 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #99 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #105 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #107 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #78 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #111 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #70 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #82 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #109 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #115 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #113 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #100 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #117 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #80 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #84 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #92 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #102 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #104 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #86 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #88 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #127 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #106 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #123 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #125 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #90 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #96 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #98 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #118 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #94 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #110 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #128 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #112 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #126 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #116 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] CSRF: Found 0 context irrelevant forms.
+[*] CSRF: Found 1 CSRF candidates.
+[*] XSS in script context: Analyzing response #114 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #124 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #108 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] Blind SQL injection (timing attack): Analyzing response #135 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #133 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #139 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #141 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #145 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #153 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #134 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #136 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #137 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #138 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #140 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #142 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #143 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #144 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #147 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] OS command injection: Analyzing response #155 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #161 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #157 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #159 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #163 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #165 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #167 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #171 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #169 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #173 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #175 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #176 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #177 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #178 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #146 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #148 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #179 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #154 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #180 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #181 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #182 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #183 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #184 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #156 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #158 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #160 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #166 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #185 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #187 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #192 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #164 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #168 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #170 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #186 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #188 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #189 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #190 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #191 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #193 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #194 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #162 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #195 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #196 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #197 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #198 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #199 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #200 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #201 for form input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #202 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #172 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #174 for form input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='1
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="1
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=1
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='2
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="2
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=2
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Got 'true' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=1
+[*] Blind SQL Injection (differential analysis): Got 'false' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='2
+[*] Blind SQL Injection (differential analysis): Got 'false' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="2
+[*] Blind SQL Injection (differential analysis): Got 'false' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=2
+[*] Blind SQL Injection (differential analysis): Got 'true' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="1
+[*] Blind SQL Injection (differential analysis): Got 'true' response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='1
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for form variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list1.xhtml
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7977s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.0626s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[*] Blind SQL Injection (differential analysis): Got control verification response for form variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+
+[*] [HTTP: 200] http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[*] XSS in HTML tag: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list2.xhtml
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7313s] load     => page (http://david-virtualbox:8080/users/list2.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list2.xhtml
+[~]         * [0.0623s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[~] Session fixation: No login-check has been set, cannot continue.
+[*] XPath Injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] XSS in HTML tag: Analyzing response #235 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #237 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #231 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #233 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #239 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #241 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #243 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #245 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #247 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #249 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #251 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #257 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #253 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #255 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #259 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #261 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #263 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #265 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #267 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #269 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #238 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #248 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #232 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #234 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML tag: Analyzing response #236 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #240 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #242 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #244 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in HTML element event attribute: Analyzing response #246 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #250 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #252 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #271 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #254 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #256 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #258 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #264 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #275 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #279 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #281 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #260 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #262 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #273 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #283 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #293 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #266 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #277 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #285 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #287 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #289 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #291 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #270 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #295 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #268 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #301 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #297 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #292 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #299 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #303 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #305 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #307 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #274 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #286 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #288 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #272 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #276 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #294 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #280 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #282 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #302 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #284 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #278 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #290 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #298 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #304 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #308 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XPath Injection: Analyzing response #306 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #300 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] XSS in script context: Analyzing response #296 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Auditing link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] Blind SQL injection (timing attack): Analyzing response #309 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #313 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #315 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #317 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #331 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #321 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #311 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #316 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #319 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #323 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL injection (timing attack): Analyzing response #314 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #329 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #333 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #310 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #312 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #337 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #339 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #318 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #341 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL injection (timing attack): Analyzing response #320 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #335 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #343 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #345 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #347 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #349 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #351 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #324 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #353 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #354 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #355 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #357 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #352 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #332 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #356 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #359 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #363 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #364 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #367 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #362 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #365 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #366 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #348 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #369 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #344 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #370 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #372 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] SQL Injection: Analyzing response #322 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #334 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #358 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #368 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #373 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #376 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #360 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #361 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #371 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #375 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #336 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #340 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #377 for link input 'ln' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #350 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #378 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #330 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #342 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #346 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection: Analyzing response #338 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] OS command injection (timing): Analyzing response #374 for link input 'stage' pointing to: 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='1
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="1
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=1
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='2
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="2
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for link with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=2
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Got 'false' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=2
+[*] Blind SQL Injection (differential analysis): Got 'true' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="1
+[*] Blind SQL Injection (differential analysis): Got 'false' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1" or 1="2
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list1.xhtml
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [1.1925s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.4984s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[*] Blind SQL Injection (differential analysis): Got 'false' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='2
+[*] Blind SQL Injection (differential analysis): Got 'true' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1' or 1='1
+[*] Blind SQL Injection (differential analysis): Got 'true' response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml' using seed: -1 or 1=1
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Server returned non 200 status (404), aborting analysis for link variable 'ln' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+[*] Blind SQL Injection (differential analysis): Got control verification response for link variable 'stage' with action 'http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml'.
+
+[*] [HTTP: 200] http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7977s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.0626s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list2.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7313s] load     => page (http://david-virtualbox:8080/users/list2.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list2.xhtml
+[~]         * [0.0623s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [1.1925s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.4984s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 404] http://david-virtualbox:8080/javax.faces.resource
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 404] http://david-virtualbox:8080/.test
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/<my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/>"'><my_tag_230506c1b0d937ebdb69c07196a2d67e/>
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/
+[*] XSS in path: Checking for: http://david-virtualbox:8080/.test/
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] [HTTP: 404] http://david-virtualbox:8080/jsf.js
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] Workload exhausted, waiting for new pages from the browser-cluster...
+[~] BrowserCluster: Pending jobs: 6
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list2.xhtml
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.6566s] load     => page (http://david-virtualbox:8080/users/list2.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list2.xhtml
+[~]         * [0.1166s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list2.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 1 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.6566s] load     => page (http://david-virtualbox:8080/users/list2.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list2.xhtml
+[~]         * [0.1166s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] Workload exhausted, waiting for new pages from the browser-cluster...
+[~] BrowserCluster: Pending jobs: 6
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list1.xhtml
+[~] DOM depth: 0 (Limit: 10)
+[~]   Transitions:
+[~]         * [0.0000s] request  => http://david-virtualbox:8080/users/list1.xhtml
+
+[*] [HTTP: 200] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 0 (Limit: 10)
+[~]   Transitions:
+[~]         * [0.0000s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] XSS in HTML tag: Submitting form with original values for j_idt8, javax.faces.ViewState, j_idt8:j_idt9 at 'http://david-virtualbox:8080/users/list1.xhtml'.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML tag: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in HTML element event attribute: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XSS in script context: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] CSRF: Looking for CSRF candidates...
+[*] CSRF: Simulating logged-out user.
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[~] Session fixation: No login-check has been set, cannot continue.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] XPath Injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] XSS in HTML tag: Analyzing response #431 for form input '__original_values__' pointing to: 'http://david-virtualbox:8080/users/list1.xhtml'
+[*] CSRF: Found 1 context irrelevant forms.
+[*] CSRF: Found 1 CSRF candidates.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL injection (timing attack): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] SQL Injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection: Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] OS command injection (timing): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1' or 1='1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1" or 1="1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'true' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1 or 1=1
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1' or 1='2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1" or 1="2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[*] Blind SQL Injection (differential analysis): Gathering 'false' data for form with action 'http://david-virtualbox:8080/users/list1.xhtml' using seed: -1 or 1=2
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'javax.faces.ViewState' form input vector.
+[~] Blind SQL Injection (differential analysis): Skipping audit of out of scope 'j_idt8:j_idt9' form input vector.
+
+[*] Workload exhausted, waiting for new pages from the browser-cluster...
+[~] BrowserCluster: Pending jobs: 5
+[*] Got new page from the browser-cluster: http://david-virtualbox:8080/users/list1.xhtml
+[~] DOM depth: 2 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7977s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.0626s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~]     -- [0.2387s] click    => <a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt8'),{'j_idt8:j_idt9':'j_idt8:j_idt9'},'');return false" class="btn btn-success"> 
+[~]         * [0.0120s] request  => http://david-virtualbox:8080/users/list1.xhtml
+
+[*] [HTTP: 500] http://david-virtualbox:8080/users/list1.xhtml
+[~] Identified as: linux, pgsql, oracle, tomcat, java, jsf
+[~] Analysis resulted in 0 usable paths.
+[~] DOM depth: 2 (Limit: 10)
+[~]   Transitions:
+[~]     -- [0.7977s] load     => page (http://david-virtualbox:8080/users/list1.xhtml)
+[~]         * [0.0004s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~]         * [0.0626s] request  => http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development
+[~]     -- [0.2387s] click    => <a href="#" onclick="mojarra.jsfcljs(document.getElementById('j_idt8'),{'j_idt8:j_idt9':'j_idt8:j_idt9'},'');return false" class="btn btn-success"> 
+[~]         * [0.0120s] request  => http://david-virtualbox:8080/users/list1.xhtml
+[~] Check directory_listing does not support: linux + pgsql + oracle + tomcat + java + jsf
+[*] Harvesting HTTP responses...
+[~] Depending on server responsiveness and network conditions this may take a while.
+[~] Check code_injection does not support: linux + pgsql + oracle + tomcat + java + jsf
+
+[*] Workload exhausted, waiting for new pages from the browser-cluster...
+[~] BrowserCluster: Pending jobs: 4
+[~] BrowserCluster: Pending jobs: 3
+[~] BrowserCluster: Pending jobs: 2
+[~] BrowserCluster: Pending jobs: 1
+[2J
+
+================================================================================
+
+
+[+] Web Application Security Report - Arachni Framework
+
+[~] Report generated on: 2015-11-18 10:07:50 +0100
+[~] Report false positives at: http://github.com/Arachni/arachni/issues
+
+[+] System settings:
+[~] ---------------
+[~] Version:           2.0dev
+[~] Audit started on:  2015-11-18 10:07:34 +0100
+[~] Audit finished on: 2015-11-18 10:07:50 +0100
+[~] Runtime:           00:00:15
+
+[~] URL:        http://david-virtualbox:8080/
+[~] User agent: Arachni/v2.0dev
+
+[*] Audited elements: 
+[~] * Links
+[~] * Forms
+[~] * UI inputs
+[~] * UI forms
+
+[*] Checks: sql_injection_timing, sql_injection, sql_injection_differential, http_only_cookies, http_put, os_cmd_injection, os_cmd_injection_timing, xss_tag, xss_dom, xss_event, xss_path, xss_dom_script_context, xss_script_context, insecure_cross_domain_policy_access, insecure_cookies, insecure_cors_policy, insecure_cross_domain_policy_headers, insecure_client_access_policy, allowed_methods, csrf, code_injection, directory_listing, emails, form_upload, session_fixation, xpath_injection
+
+[~] ===========================
+
+[+] 0 issues were detected.
+
+
+[+] Plugin data:
+[~] ---------------
+
+
+[*] Health map
+[~] ~~~~~~~~~~~~~~
+[~] Description: Generates a simple list of safe/unsafe URLs.
+
+[~] Legend:
+[+] No issues
+[-] Has issues
+
+[+] http://david-virtualbox:8080/
+[+] http://david-virtualbox:8080/.test
+[+] http://david-virtualbox:8080/index.xhtml
+[+] http://david-virtualbox:8080/javax.faces.resource
+[+] http://david-virtualbox:8080/javax.faces.resource/jsf.js.xhtml
+[+] http://david-virtualbox:8080/jsf.js
+[+] http://david-virtualbox:8080/users/list1.xhtml
+[+] http://david-virtualbox:8080/users/list2.xhtml
+
+[~] Total: 8
+[+] Without issues: 8
+[-] With issues: 0 ( 0% )
+
+[~] Report saved at: /home/david/PROJECTS/link-not-followed-by-arachni/pentest.afr [0.0MB]
+
+[~] Audited 18 pages.
+
+[~] Duration: 00:00:15
+[~] Processed 434/434 HTTP requests.
+[~] -- 147.775 requests/second.
+[~] Processed 14/14 browser jobs.
+[~] -- 1.286 second/job.
+
+[~] Currently auditing          http://david-virtualbox:8080/users/list1.xhtml
+[~] Burst response time sum     0.045 seconds
+[~] Burst response count        1
+[~] Burst average response time 0.045 seconds
+[~] Burst average               0.0 requests/second
+[~] Timed-out requests          0
+[~] Original max concurrency    20
+[~] Throttled max concurrency   20
+
+Arachni - Web Application Security Scanner Framework v2.0dev
+   Author: Tasos "Zapotek" Laskos <tasos.laskos@arachni-scanner.com>
+
+           (With the support of the community and the Arachni Team.)
+
+   Website:       http://arachni-scanner.com
+   Documentation: http://arachni-scanner.com/wiki
+
+
+
+[*] HTML: Creating HTML report...
+[*] HTML: Saved in 'pentest.html.zip'.

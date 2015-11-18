@@ -1,1 +1,3 @@
-users/list.xhtml
+users/list1.xhtml
+users/list2.xhtml
+index.xhtml

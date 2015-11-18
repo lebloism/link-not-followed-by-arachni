@@ -13,12 +13,20 @@ public class UsersPage implements Serializable {
 
     protected static final String USER_ID = "user_id";
     protected static final String VIEW_ONLY = "VIEW_ONLY";
-    private static final String USER_EDIT_URL = "/users/edit.xhtml?faces-redirect=true";
+    private static final String USER_EDIT_URL1 = "/users/edit1.xhtml?faces-redirect=true";
+    private static final String USER_EDIT_URL2 = "/users/edit2.xhtml?faces-redirect=true";
 
-    public String createNew() {
+    public String createNew1() {
         putFlashParameter(USER_ID, null);
         putFlashParameter(VIEW_ONLY, false);
-        return USER_EDIT_URL;
+        return USER_EDIT_URL1;
+    }
+
+
+    public String createNew2() {
+        putFlashParameter(USER_ID, null);
+        putFlashParameter(VIEW_ONLY, false);
+        return USER_EDIT_URL2;
     }
 
 
