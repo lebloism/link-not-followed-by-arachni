@@ -1,15 +1,26 @@
 # link-not-followed-by-arachni
-Small webapp with a link not followed by Arachni.
+Small webapp with 2 "list" pages, each with a link to an "edit" page. The links from listN to editN are not followed by Arachni, despite the audit-exclude-vector options.
 
-The webapp has 2 pages : 
-- /users/list.xhtml : It contains a link "new user" which redirects to /users/edit.xhtml.
-- /users/edit.xhtml : It contains only the text " THIS IS THE PAGE I WANT TO SCAN"
+It's a webapp very similar to the one on the "master" branch : I just duplicated "list" and "edit" to have 2 lists and 2 edits.
 
-The page /users/list.xhtml is listed in the file for 'scope-extend-paths'. Arachni see it.
+The webapp has 5 pages : 
+- index.html : the welcome page, with 2 links to list1 and list2
+- users/list1.xhtml : It contains a link "new user 1" which redirects to /users/edit1.xhtml.
+- users/edit1.xhtml : It contains only the text " THIS IS THE PAGE I WANT TO SCAN - 1"
+- users/list2.xhtml : It contains a link "new user 2" which redirects to /users/edit2.xhtml.
+- users/edit2.xhtml : It contains only the text " THIS IS THE PAGE I WANT TO SCAN - 2"
 
-The page /users/edit.xhtml is not listed in the file for 'scope-extend-paths', but I expect Arachni to see the link on /users/list and to follow it (I can't list the 'edit' page directly in scope-extend-paths because, in my real webapp, I need to transfer some informations from 'list' to 'edit'). But it seems Arachni doesn't. 
+I run Arachni with this command line : (my hostname is david-virtualbox)
+```
+( ~/arachni-2.0dev-1.0dev/bin/arachni http://david-virtualbox:8080/ --scope-dom-depth-limit=10 --scope-extend-paths="/home/david/PROJECTS/link-not-followed-by-arachni/arachni-paths.txt" --audit-links --audit-forms --audit-ui-inputs --audit-ui-forms --checks='sql_*,http_*,os_*,xss_*,insecure_*,allowed_methods,csrf,code_injection,directory_listing,emails,form_upload,session_fixation,xpath_injection' --platforms='linux,pgsql,oracle,tomcat,java,jsf' --report-save-path=pentest.afr --audit-exclude-vector=j_idt --audit-exclude-vector=javax.faces.ViewState  && ~/arachni-2.0dev-1.0dev/bin/arachni_reporter pentest.afr --reporter=html:outfile=pentest.html.zip ) > logs.txt
+```
 
-I commited the report so you can see users/edit.xhtml is not listed in the sitemap.
+This command line works correctly on the "master" branch (= only 1 list and 1 edit pages), Arachni sees the "edit" page without problem (thanks to your audit-exclude-vector option).
+But on this branch, the "edit" pages are not seen : 
+edit1 and edit2 are not in the report, list1 has a 500 status code and list2 has 200. 
+
+I commited the file logs.txt and the .afr and .html.zip reports, so you can have the exact informations.
+
 
 ## How to run
 
@@ -17,5 +28,5 @@ I commited the report so you can see users/edit.xhtml is not listed in the sitem
 I commited the war of the webapp (target/link-not-followed-by-arachni-1.0.0-SNAPSHOT.war), so you just have to use it in an already installed tomcat (if you have one).
 
 ### From the code
-In the root directory, run : mvn clean tomcat7:run  (you need maven). The webapp will be accessible at : http://localhost:8080/users/list.xhtml
+In the root directory, run : mvn clean tomcat7:run  (you need maven). The webapp will be accessible at : http://localhost:8080/index.xhtml
 
