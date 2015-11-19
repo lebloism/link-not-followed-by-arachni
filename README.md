@@ -6,9 +6,9 @@ It's a webapp very similar to the one on the "master" branch : I just duplicated
 The webapp has 5 pages : 
 - index.html : the welcome page, with 2 links to list1 and list2
 - users/list1.xhtml : It contains a link "new user 1" which redirects to /users/edit1.xhtml.
-- users/edit1.xhtml : It contains only the text " THIS IS THE PAGE I WANT TO SCAN - 1"
+- users/edit1.xhtml : It contains the text " THIS IS THE PAGE I WANT TO SCAN - 1" and an link to itself
 - users/list2.xhtml : It contains a link "new user 2" which redirects to /users/edit2.xhtml.
-- users/edit2.xhtml : It contains only the text " THIS IS THE PAGE I WANT TO SCAN - 2"
+- users/edit2.xhtml : It contains the text " THIS IS THE PAGE I WANT TO SCAN - 2" and an link to itself
 
 I run Arachni with this command line : (my hostname is david-virtualbox)
 ```
@@ -17,18 +17,21 @@ I run Arachni with this command line : (my hostname is david-virtualbox)
 
 This command line works correctly on the "master" branch (= only 1 list and 1 edit pages), Arachni sees the "edit" page without problem (thanks to your audit-exclude-vector option).
 But on this branch, the "edit" pages are not seen : 
-edit1 and edit2 are not in the report, list1 has a 500 status code and list2 has 200. 
+edit1 and edit2 are not in the report, list1 and list2 has 500 status code. 
 
-The webapp logs : 
+The webapp logs contain : 
 ```
+GRAVE: Servlet.service() for servlet [faces] in context with path [] threw exception [viewId:/users/list2.xhtml - La vue «/users/list2.xhtml» n’a pas pu être restaurée.] with root cause
+javax.faces.application.ViewExpiredException: viewId:/users/list2.xhtml - La vue «/users/list2.xhtml» n’a pas pu être restaurée.
+(...)
 GRAVE: Servlet.service() for servlet [faces] in context with path [] threw exception [viewId:/users/list1.xhtml - La vue «/users/list1.xhtml» n’a pas pu être restaurée.] with root cause
 javax.faces.application.ViewExpiredException: viewId:/users/list1.xhtml - La vue «/users/list1.xhtml» n’a pas pu être restaurée.
 ```
 La vue «/users/list1.xhtml» n’a pas pu être restaurée = View «/users/list1.xhtml» couldn't be restored.
 
-Which explains the "500" status code. But why could the view not be restored ? Is the ViewState still invalidated by Arachni, despite the audit-exclude-vector ? How ?
+Which explains the "500" status codes. But why could the view not be restored ? Is the ViewState still invalidated by Arachni, despite the audit-exclude-vector ? How ?
 
-I commited the file logs.txt containings the arachni logs, and the .afr and .html.zip reports, so you can have the exact informations.
+I commited the file logs.txt containing the arachni logs, and the .afr and .html.zip reports, so you can have the exact informations.
 
 
 ## How to run

@@ -15,6 +15,13 @@
 
         <ui:define name="content">
             THIS IS THE PAGE I WANT TO SCAN - 1
+
+            <h:form>
+                <h:commandLink action="#{usersPage.createNew1()}"
+                               styleClass="btn btn-success">
+                    new user 1
+                </h:commandLink>
+            </h:form>
         </ui:define>
     </ui:composition>
 </h:body>
